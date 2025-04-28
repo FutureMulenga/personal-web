@@ -1,0 +1,32 @@
+.whatsapp-btn {
+    display: inline-block;
+    padding: 12px 28px;
+    font-weight: 600;
+    background-color: #25D366; /* WhatsApp's green color */
+    color: white;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 2px solid #25D366;
+    font-size: 16px;
+    box-shadow: 0 2px 10px rgba(37, 211, 102, 0.3);
+  }
+  
+  .whatsapp-btn:hover {
+    background-color: #1da851; /* Slightly darker green on hover */
+    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.5);
+    transform: translateY(-2px);
+  }
+  
+  .whatsapp-btn i {
+    margin-right: 8px;
+  }
+
+  .profile-picture {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #e9edef;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+  }
