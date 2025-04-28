@@ -9,6 +9,7 @@ urlpatterns = [
      path('resume/', views.Resume, name="resume"),
      path('contact/', views.Contact, name="contact"),
      path('service/', views.Services, name='service'),
+     path('portfolio/', views.Portfolio, name='portfolio'),
 
      #Admin urls
      path('home_admin/', views.HomeAdmin, name='home_admin'),

@@ -54,3 +54,8 @@ def Contact(request):
 def Services(request):
     template = loader.get_template('Client/service.html')
     return HttpResponse(template.render({},request))
+
+#Portfilio view 
+def Portfolio(request):
+    template = loader.get_template('Client/portfolio1.html')
+    return HttpResponse(template.render({},request))

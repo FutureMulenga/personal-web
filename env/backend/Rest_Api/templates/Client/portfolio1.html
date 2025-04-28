@@ -1,0 +1,269 @@
+{% extends "navbar.html" %}
+{% load static %}
+{% block title %}Portfolio | Future{% endblock %}
+
+{% block content %}
+<!-- Page Title -->
+<div class="page-title" data-aos="fade">
+  <div class="heading">
+    <div class="container">
+      <div class="row d-flex justify-content-center text-center">
+        <div class="col-lg-8">
+          <h1>Portfolio</h1>
+          <p class="mb-0">Explore my  portfolio</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav class="breadcrumbs">
+    <div class="container">
+      <ol>
+        <li><a href="{% url 'home' %}">Home</a></li>
+        <li class="current">Portfolio</li>
+      </ol>
+    </div>
+  </nav>
+</div><!-- End Page Title -->
+
+<!-- Portfolio Section -->
+<section id="portfolio" class="portfolio section">
+  <div class="container">
+    <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
+      <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
+        <li data-filter="*" class="filter-active">All</li>
+        <li data-filter=".filter-app">Me</li>
+        <li data-filter=".filter-product">Print Services</li>
+        <li data-filter=".filter-branding">Accessories</li>
+        <li data-filter=".filter-books">Others</li>
+      </ul><!-- End Portfolio Filters -->
+      
+      <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+        <!-- App Portfolio Items -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/m3.jpg' %}" class="img-fluid" alt="Mobile Banking App">
+            <div class="portfolio-info">
+              <h4>Dinner Night(SHAS)</h4>
+              <p>Went for a dinner organised pa SHAS at Copperbelt University</p>
+              <a href="{% static 'assets/img/portfolio/m3.jpg' %}" title="Dinner Night" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
+            <!-- App Portfolio Items -->
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/portfolio/m7.jpg' %}" class="img-fluid" alt="Intern">
+                <div class="portfolio-info">
+                  <h4>Internships</h4>
+                  <p>HELSB</p>
+                  <a href="{% static 'assets/img/portfolio/m7.jpg' %}" title="Dinner Night" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/me.jpg' %}" class="img-fluid" alt="Mobile Banking App">
+              <div class="portfolio-info">
+                <h4>Dinner Night(SHAS)</h4>
+                <p>Went for a dinner organised pa SHAS at Copperbelt University</p>
+                <a href="{% static 'assets/img/portfolio/me.jpg' %}" title="Dinner Night" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/me2.jpg' %}" class="img-fluid" alt="Fitness Tracking App">
+            <div class="portfolio-info">
+              <h4>ICTAZ Election day</h4>
+              <p>Participated in the ICTAZ elections in 2023</p>
+              <a href="{% static 'assets/img/portfolio/me2.jpg' %}" title="ICTAZ elections" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        
+        <!-- PRINTING Portfolio Items -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/prit1.jpg' %}" class="img-fluid" alt="Smart Home System">
+            <div class="portfolio-info">
+              <h4>Binding</h4>
+              <p>Binding.</p>
+              <a href="{% static 'assets/img/portfolio/prit1.jpg' %}" title="Binding" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/p2.jpg' %}" class="img-fluid" alt="Ergonomic Office Chair">
+            <div class="portfolio-info">
+              <h4>Laminating</h4>
+              <p>Laminating</p>
+              <a href="{% static 'assets/img/portfolio/p2.jpg' %}" title="Laminating" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/p5.jpg' %}" class="img-fluid" alt="Engraving">
+              <div class="portfolio-info">
+                <h4>Engraving</h4>
+                <p>Engraving</p>
+                <a href="{% static 'assets/img/portfolio/p5.jpg' %}" title="Engraving" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+        </div><!-- End Portfolio Item -->
+        
+        <!-- Accessories Portfolio Items -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/ac1.jpg' %}" class="img-fluid" alt="Cables">
+            <div class="portfolio-info">
+              <h4>Cables</h4>
+              <p>Cables</p>
+              <a href="{% static 'assets/img/portfolio/ac1.jpg' %}" title="Cables" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/ac2.jpg' %}" class="img-fluid" alt="Sportswear Brand Identity">
+            <div class="portfolio-info">
+              <h4>Headsets</h4>
+              <p>We have different types of headsets feel free to reach out</p>
+              <a href="{% static 'assets/img/portfolio/ac2.jpg' %}" title="headsets" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/ac3.jpg' %}" class="img-fluid" alt="Sportswear Brand Identity">
+              <div class="portfolio-info">
+                <h4>Power cables</h4>
+                <p>power cables for laptops</p>
+                <a href="{% static 'assets/img/portfolio/ac3.jpg' %}" title="power cables" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+        </div><!-- End Portfolio Item -->
+        
+        <!-- Others Portfolio Items -->
+        <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+          <div class="portfolio-content h-100">
+            <img src="{% static 'assets/img/portfolio/m5.jpg' %}" class="img-fluid" alt="Photography Book Design">
+            <div class="portfolio-info">
+              <h4>certification</h4>
+              <p>Getting Student Health Awarenes Society President certification</p>
+              <a href="{% static 'assets/img/portfolio/m5.jpg' %}" title="certification" data-gallery="portfolio-gallery-books" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+              <a href="}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+            </div>
+          </div>
+        </div><!-- End Portfolio Item -->
+        
+         <!-- Others Portfolio Items -->
+         <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-books">
+            <div class="portfolio-content h-100">
+              <img src="{% static 'assets/img/portfolio/m6.jpg' %}" class="img-fluid" alt="Photography Book Design">
+              <div class="portfolio-info">
+                <h4>Award</h4>
+                <p>Getting Student Health Awarenes Society award</p>
+                <a href="{% static 'assets/img/portfolio/m6.jpg' %}" title="award" data-gallery="portfolio-gallery-books" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="}" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div>
+          </div><!-- End Portfolio Item -->
+       
+      </div><!-- End Portfolio Container -->
+    </div>
+  </div>
+</section><!-- End Portfolio Section -->
+
+<!-- Portfolio Details Section -->
+<section id="portfolio-details" class="portfolio-details section">
+
+    <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+      <div class="row gy-4">
+
+        <div class="col-lg-8">
+          <div class="portfolio-details-slider swiper init-swiper">
+
+            <script type="application/json" class="swiper-config">
+              {
+                "loop": true,
+                "speed": 600,
+                "autoplay": {
+                  "delay": 5000
+                },
+                "slidesPerView": "auto",
+                "pagination": {
+                  "el": ".swiper-pagination",
+                  "type": "bullets",
+                  "clickable": true
+                }
+              }
+            </script>
+
+            <div class="swiper-wrapper align-items-center">
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/app3.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/app2.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/app1.png' %}" alt="">
+              </div>
+
+              <div class="swiper-slide">
+                <img src="{% static 'assets/img/portfolio/app4.png' %}" alt="">
+              </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="portfolio-info" data-aos="fade-up" data-aos-delay="200">
+            <h3>Project information</h3>
+            <ul>
+              <li><strong>Category</strong>: Mobile app</li>
+              <li><strong>Client</strong>: Me</li>
+              <li><strong>Project URL</strong>: <a href="#">mulenga-future.vercel.app</a></li>
+            </ul>
+          </div>
+          <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+            <h2>Zed lingo application </h2>
+            <p>
+              This is was my final year project at Copperbelt University. The Zed Lingo application is a mobile app designed to help users learn and practice the Zambian language, nyanja. It features interactive lessons, quizzes, and audio pronunciations to enhance language learning.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+  </section><!-- /Portfolio Details Section -->
+{% endblock %}
