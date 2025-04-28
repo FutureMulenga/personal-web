@@ -19,7 +19,9 @@ SECRET_KEY = 'django-insecure-zn(@u^j@++5bb_06c+)^xj#ol&m(45)gs6xb()kka9&*qk!3e+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'mulenga-future.vercel.app',
+]
 
 
 # Application definition
