@@ -1,0 +1,63 @@
+{% extends "navbar.html" %}
+{% load static %}
+
+{% block title %}Future | Mulenga{% endblock %}
+
+
+{% block content %}
+<!-- Hero Section -->
+<section id="hero" class="hero section dark-background">
+
+  <img src="{% static 'assets/img/bg2.jpg' %}" alt="" data-aos="fade-in">
+
+  <div class="container" data-aos="zoom-out" data-aos-delay="100">
+    <h2>Future Mulenga</h2>
+    <p>I'm <span class="typed" data-typed-items="a Software Engineer &#128187;, a freelancer &#128268;,an entreprenuer &#128185;"></span><span class="typed-cursor typed-cursor--blink"></span></p>
+    <div class="social-links">
+      <a href="#"><i class="bi bi-twitter-x"></i></a>
+      <a href="#"><i class="bi bi-facebook"></i></a>
+      <a href="#"><i class="bi bi-instagram"></i></a>
+      <a href="#"><i class="bi bi-linkedin"></i></a>
+    </div>
+      
+    <div style="display: flex; flex-direction: column; padding: 10px; margin: 15px 0; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+      <!-- Top row with calendar -->
+      <div style="display: flex; align-items: center; margin-bottom: 10px;">
+          <span style="font-size: 1.5rem; margin-right: 10px;">&#128197;</span> <!-- Calendar emoji -->
+          <span style="font-weight: 500;">Date: {{date}}</span>
+      </div>
+      
+      <!-- Bottom row with clock -->
+      <div style="display: flex; align-items: center;">
+        <span class="clock-emoji">&#x1F551;</span> <!-- Clock emoji -->
+        <span class="time-display">TIME: <span id="current-time"></span></span>
+        <span class="tagline">- time is money, money ni koloko</span>
+      </div>
+  </div>
+  </div>
+</section><!-- /Hero Section -->
+
+
+<!-- Call To Action Section -->
+<section id="call-to-action" class="call-to-action section accent-background">
+
+  <div class="container">
+
+    <div class="row" data-aos="zoom-in" data-aos-delay="100">
+      <div class="col-xl-9 text-center text-xl-start">
+        <h3>Message me &#128519;</h3>
+        <p>Reach me out on whatsap.</p>
+      </div>
+      <div class="col-xl-3 cta-btn-container text-center">
+        <a class="whatsapp-btn" href="https://wa.me/260979200391" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+</section><!-- /Call To Action Section -->
+
+
+{% endblock %}

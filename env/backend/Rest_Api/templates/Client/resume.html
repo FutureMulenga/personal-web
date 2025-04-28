@@ -1,0 +1,51 @@
+{% extends 'navbar.html'%}
+{% load static%}
+
+{% block title%}Resume | Future {% endblock%}
+
+
+{% block content%} 
+
+<!-- Page Title -->
+<div class="page-title" data-aos="fade">
+    <div class="heading">
+      <div class="container">
+        <div class="row d-flex justify-content-center text-center">
+          <div class="col-lg-8">
+            <h1>CV</h1>
+            <p class="mb-0">Odio et unde deleniti. Deserunt numquam exercitationem. Officiis quo odio sint voluptas consequatur ut a odio voluptatem. Sit dolorum debitis veritatis natus dolores. Quasi ratione sint. Sit quaerat ipsum dolorem.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="breadcrumbs">
+      <div class="container">
+        <ol>
+          <li><a href="home.html">Home</a></li>
+          <li class="current">CV</li>
+        </ol>
+      </div>
+    </nav>
+  </div><!-- End Page Title -->
+
+  <!-- Resume Section -->
+  <section id="resume" class="resume section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="resume-title">Summary</h3>
+          <div class="resume-item pb-0"></div> <!-- Placeholder for Summary -->
+  
+          <h3 class="resume-title">Education</h3>
+          <div class="resume-item"></div> <!-- Placeholder for Education -->
+        </div>
+  
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <h3 class="resume-title">Professional Experience</h3>
+          <div class="resume-item"></div> <!-- Placeholder for Experience -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+{% endblock%}

@@ -1,0 +1,95 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Dashboard{% endblock %}</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
+    <link href="{% static 'assets/css/admin.css' %}" rel="stylesheet">
+
+
+    {% block extra_css %}{% endblock %}
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar" id="sidebar">
+        <div class="logo-container">
+            <a href="" class="logo">
+                <div class="logo-icon"><i class="fas fa-cube"></i></div>
+                <div class="logo-text">Dashboard</div>
+            </a>
+            <button class="toggle-btn" id="toggle-sidebar">
+                <i class="fas fa-chevron-left"></i>
+            </button>
+        </div>
+        <ul class="nav-list">
+            <li class="nav-item">
+                <a href="{%url 'home_admin'%}" class="nav-link {% block home_active %}{% endblock %}">
+                    <span class="nav-icon"><i class="fas fa-home"></i></span>
+                    <span class="nav-text">Home</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link {% block resume_active %}{% endblock %}">
+                    <span class="nav-icon"><i class="fas fa-file-alt"></i></span>
+                    <span class="nav-text">Resume</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link {% block contact_active %}{% endblock %}">
+                    <span class="nav-icon"><i class="fas fa-envelope"></i></span>
+                    <span class="nav-text">Contact</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a href="" class="nav-link {% block login_active %}{% endblock %}">
+                    <span class="nav-icon"><i class="fas fa-sign-in-alt"></i></span>
+                    <span class="nav-text">Login</span>
+                </a>
+            </li>
+        </ul>
+        <div class="user-profile">
+            <div class="user-avatar">JD</div>
+            <div class="user-info">
+                <div class="user-name">John Doe</div>
+                <div class="user-role">Administrator</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content" id="main-content">
+        <div class="topbar">
+            <div class="left-section">
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <h1 class="page-title" id="page-title">{% block page_title %}Dashboard{% endblock %}</h1>
+            </div>
+            <div class="top-actions">
+                <div class="search-bar">
+                    <span class="search-icon"><i class="fas fa-search"></i></span>
+                    <input type="text" class="search-input" placeholder="Search...">
+                </div>
+                <button class="action-btn notification-btn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge">3</span>
+                </button>
+                <button class="action-btn">
+                    <i class="fas fa-cog"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="content">
+            {% block content %}
+            <!-- Page-specific content goes here -->
+            {% endblock %}
+        </div>
+    </div>
+
+    <script src="{% static 'assets/js/admin.js' %}"></script>
+    {% block extra_js %}{% endblock %}
+</body>
+</html>

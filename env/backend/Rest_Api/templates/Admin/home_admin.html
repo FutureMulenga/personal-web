@@ -1,0 +1,47 @@
+{% extends 'admin.html' %}
+
+{% block title %}Dashboard - Home{% endblock %}
+
+{% block home_active %}active{% endblock %}
+
+{% block page_title %}Dashboard{% endblock %}
+
+{% block content %}
+<div class="dashboard-card">
+    <h2 class="card-title">Welcome to Your Dashboard</h2>
+    <p class="welcome-message">
+        Welcome back! Here's an overview of your latest stats and activities. The dashboard provides
+        a centralized view of your key metrics and recent updates.
+    </p>
+    <div class="stat-grid">
+        <div class="stat-card">
+            <div class="stat-title">Total Views</div>
+            <div class="stat-value">4,285</div>
+            <div class="stat-change positive">
+                <i class="fas fa-arrow-up"></i> 12.5% Since last week
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Applications</div>
+            <div class="stat-value">27</div>
+            <div class="stat-change positive">
+                <i class="fas fa-arrow-up"></i> 8.2% Since last week
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Response Rate</div>
+            <div class="stat-value">68%</div>
+            <div class="stat-change negative">
+                <i class="fas fa-arrow-down"></i> 3.1% Since last week
+            </div>
+        </div>
+        <div class="stat-card">
+            <div class="stat-title">Engagement</div>
+            <div class="stat-value">92%</div>
+            <div class="stat-change positive">
+                <i class="fas fa-arrow-up"></i> 4.8% Since last week
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
